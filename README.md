@@ -12,7 +12,7 @@ VideoCentral(AmazonPrimeビデオのCMS)用Availsシート管理DB
 
 ## ③DEMO
 
-https://docomo-tech-tkn.sakura.ne.jp/06_WebAPI/spotify.html
+https://docomo-tech-tkn.sakura.ne.jp/08_PHP2/index.php
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
@@ -20,10 +20,12 @@ https://docomo-tech-tkn.sakura.ne.jp/06_WebAPI/spotify.html
   
 ## ⑤工夫した点・こだわった点
 
-- エクセルでのDBで実現できないようにするため、アップロードしたエクセルを読み込む機能を実装した
-- 
+- エクセルでのDBで実現できないようにするため、アップロードしたエクセルを読み込む機能を実装した(PHPSpreadSheet)
+- 複数のエクセルフォーマットに対応するためDBカラム名と一致する列のデータのみをINSERTするようにした
+- DBを参照し、過去に登録されていれば、最新値に更新する機能を実装した
 
 ## ⑥難しかった点・次回トライしたいこと(又は機能)
 
-- グラフをもっと見やすくしたかった
-- 取得したデータを分類してサマリを出力できるようにしたかった
+- エクセルの最終行のみうまく処理できないままだった
+- エクセルの書式が日付のデータをうまく処理できなかった
+- 空白行がある場合など例外にも対応できるようにしたい
